@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         buttonPlay.setOnClickListener {
             val intentClick = Intent(this,GameWindow::class.java)
             startActivity(intentClick)
+            Log.i("!!!", "button clicked!!")
         }
         buttonOne.setOnClickListener {
             val intent = Intent(this, InstructionsWindow::class.java)
